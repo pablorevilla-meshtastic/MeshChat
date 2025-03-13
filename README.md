@@ -23,7 +23,7 @@ Install the environment requirements:
  ``` 
 ```ini
 [node]
-node_ip = 192.168.86.37  # Replace with your Meshtastic node's IP address
+node_ip = 192.168.0.10  # Replace with your Meshtastic node's IP address
 ```
 
 ## Running Chat
