@@ -1,5 +1,3 @@
-import time
-import sys
 import tkinter as tk
 from tkinter import scrolledtext, Entry, Label
 from pubsub import pub
@@ -10,6 +8,8 @@ node_ip = '192.168.86.37'  # Replace with your Meshtastic node's IP address
 
 def get_node_info(node_ip):
     print("Initializing TcpInterface to get node info...")
+    local = None  # Ensure 'local' is always defined
+
     try:
         local = TCPInterface(hostname=node_ip)
         node_info = local.nodes
@@ -18,7 +18,9 @@ def get_node_info(node_ip):
         print(f"Error retrieving node info: {e}")
         node_info = {}
     finally:
-        local.close()
+        if local:  # Only close if 'local' was successfully initialized
+            local.close()
+
     return node_info
 
 
