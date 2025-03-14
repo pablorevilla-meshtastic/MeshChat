@@ -4,7 +4,7 @@ Requires **`python3.11`** or above.
 
 Clone the repo from github with:
 ``` bash 
-git clone --recurse-submodules https://github.com/pablorevilla-meshtastic/IPchat.git
+gh repo clone pablorevilla-meshtastic/MeshChat
 ```
 Create a python virtual environment:
 ``` bash
