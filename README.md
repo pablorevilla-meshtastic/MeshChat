@@ -31,5 +31,9 @@ MAC_ADDRESS = FA:B6:D2:73:3F:CA
 ## Running Chat
 Start the chat client.
 ``` bash
-./env/bin/python chat.py
+./env/bin/python chatble.py
+```
+or 
+``` bash
+./env/bin/python chatip.py
 ```
