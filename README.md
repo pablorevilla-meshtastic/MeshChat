@@ -34,11 +34,12 @@ MAC_ADDRESS = FA:B6:D2:73:3F:CA
 ```
 
 ## Running Chat
-Start the chat client.
+Start the chat client for BLE
 ``` bash
 ./env/bin/python chatble.py
 ```
 or 
+Start the chat client for BLE
 ``` bash
 ./env/bin/python chatip.py
 ```
