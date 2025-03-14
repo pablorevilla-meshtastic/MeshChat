@@ -1,4 +1,9 @@
-Requires **`python3.11`** or above.
+# MeshChat
+
+Simple Primary Channel Chat client for Meshtastic
+
+![node](images/meshchat.png)
+
 
 ## Preparing
 
