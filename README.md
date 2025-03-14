@@ -7,7 +7,7 @@ Simple Primary Channel Chat client for Meshtastic
 
 ## Preparing
 
-Clone the repo from github with:
+Clone the repo from gitHub with:
 ``` bash 
 gh repo clone pablorevilla-meshtastic/MeshChat
 ```
@@ -22,7 +22,7 @@ Install the environment requirements:
 ``` bash
 ./env/bin/pip install -r requirements.txt
 ```
- Edit `config.ini` and change the IP address of your Meshtasic node.
+ Edit `config.ini` and change the IP address of your Meshtastic node.
  ```bash
  nano config.ini
  ``` 
@@ -38,8 +38,7 @@ Start the chat client for BLE
 ``` bash
 ./env/bin/python chatble.py
 ```
-or 
-Start the chat client for BLE
+Start the chat client for IP
 ``` bash
 ./env/bin/python chatip.py
 ```
