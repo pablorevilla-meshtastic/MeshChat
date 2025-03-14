@@ -13,7 +13,7 @@ gh repo clone pablorevilla-meshtastic/MeshChat
 ```
 Create a python virtual environment:
 ``` bash
-cd IPchat
+cd MeshChat
 ```
 ``` bash
 python3 -m venv env
@@ -28,11 +28,17 @@ Install the environment requirements:
  ``` 
 ```ini
 [node]
-node_ip = 192.168.0.10  # Replace with your Meshtastic node's IP address
+# Replace with your Meshtastic node's IP address or MAC Address for BLE connection
+node_ip = 192.168.0.10 
+MAC_ADDRESS = FA:B6:D2:73:3F:CA
 ```
 
 ## Running Chat
 Start the chat client.
 ``` bash
-./env/bin/python chat.py
+./env/bin/python chatble.py
+```
+or 
+``` bash
+./env/bin/python chatip.py
 ```
